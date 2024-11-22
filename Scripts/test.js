@@ -1,9 +1,14 @@
-const links = document.querySelector('.navbar-links');
-const toggleButton = document.querySelector('.dropdown-toggle');
-
-toggleButton.addEventListener('click', () => {
+// Toggle Menu for Mobile View
+function toggleMenu() {
+    const links = document.querySelector('.navbar-links');
     links.classList.toggle('active');
-});
+}
+// Toggle Dropdown Menu
+function Dropdown(event) {
+    event.preventDefault();
+    const dropdown = event.target.closest('.dropdown');
+    dropdown.classList.toggle('active');
+}
 
 function openSidebar() {
     document.getElementById("sidebar").style.width = "250px";
@@ -22,4 +27,5 @@ window.onclick = function(event) {
             dropdowns[i].classList.remove('active');
         }
     }
+
 };
