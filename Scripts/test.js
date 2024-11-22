@@ -1,4 +1,4 @@
-// Toggle Menu for Mobile View
+
 function toggleMenu() {
     const links = document.querySelector('.navbar-links');
     links.classList.toggle('active');
@@ -19,7 +19,7 @@ function closeSidebar() {
     document.getElementById("sidebar").style.width = "0";
 }
 
-// Close dropdown && sidebar if clicked outside
+// Close dropdown  if clicked outside
 
 window.onclick = function(event) {
     if (!event.target.matches('.dropdown-toggle')) {
