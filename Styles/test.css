@@ -1,13 +1,15 @@
-/* Navbar Styles */
 body{
-    /* background-color: #003366; */
+    margin: 0;
+    padding: 0;
 }
+/* Navbar Styles */
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #fff;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-left: 15px;
 }
 
@@ -15,7 +17,7 @@ body{
     color: #003366;
     text-decoration: none;
     font-size: 35px;
-    margin-left: 55px;
+    margin-left: 57px;
     font-weight: bold;
 }
 
@@ -47,16 +49,6 @@ body{
     margin-left: 200px;
 }
 
-/* menu categories */
-
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    color: #fff;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
 /* Dropdown Menu Styles */
 
@@ -101,10 +93,11 @@ body{
 }
 
 /****   the library photo ***/
+
 .main-photo img{
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust height as needed */
+    height: 470px;
     overflow: hidden;
 }
 
@@ -147,13 +140,13 @@ body{
 
 .open-btn {
     font-size: 18px;
-    padding: 7px 15px;
-    background-color:  #2F4F4F;
+    padding: 3px 13px;
+    background-color:  #3a5c5c;
     color: #fff;
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 20px;
+    top: 24px;
     left: 20px;
 }
 

@@ -1,8 +1,4 @@
 
-function toggleMenu() {
-    const links = document.querySelector('.navbar-links');
-    links.classList.toggle('active');
-}
 // Toggle Dropdown Menu
 function Dropdown(event) {
     event.preventDefault();
@@ -28,5 +24,4 @@ window.onclick = function(event) {
             dropdowns[i].classList.remove('active');
         }
     }
-
 };
