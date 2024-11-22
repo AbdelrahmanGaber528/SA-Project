@@ -153,7 +153,9 @@ body{
 .open-btn:hover{
     background-color:  #258989;
 }
+
 /*
+    <!----some colors----!>
 
 .earth-tone-brown {
     color: #7E4B3C;  Brown resembling wood 
@@ -176,55 +178,6 @@ body{
     background-color: #2F4F4F; /* Dark Green background 
 }
 
-
-.deep-blue {
-    color: #003366; /* Deep Blue 
-}
-
-.deep-blue-bg {
-    background-color: #003366; /* Deep Blue background 
-}
-
-.white-bg {
-    background-color: #FFFFFF; /* White background 
-}
-
-.cream-bg {
-    background-color: #FFF5E1; /* Cream background 
-}
-
-.gold-accent {
-    color: #FFD700;  Gold 
-}
-
-.light-orange {
-    color: #FFA500; /* Light Orange 
-}
-
-/* Header & Navigation example *
-header {
-    background-color: #003366; /* Deep Blue 
-    color: #FFFFFF; /* White text 
-    padding: 15px;
-}
-
-nav a {
-    color: #FFFFFF; /* White text for links 
-    padding: 10px 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #FFD700; /* Gold accent on hover 
-}
-
-/* Content Area 
-.content {
-    background-color: #FFF5E1; /* Cream background 
-    color: #333; /* Dark text color 
-    padding: 20px;
-}
-
 /* Footer 
 footer {
     background-color: #7E4B3C; /* Earth-tone brown 
@@ -233,3 +186,4 @@ footer {
     text-align: center;
 }
 */
+
