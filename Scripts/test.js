@@ -1,8 +1,4 @@
-// Toggle Menu for Mobile View
-function toggleMenu() {
-    const links = document.querySelector('.navbar-links');
-    links.classList.toggle('active');
-}
+
 // Toggle Dropdown Menu
 function Dropdown(event) {
     event.preventDefault();
@@ -19,7 +15,7 @@ function closeSidebar() {
     document.getElementById("sidebar").style.width = "0";
 }
 
-// Close dropdown && sidebar if clicked outside
+// Close dropdown  if clicked outside
 
 window.onclick = function(event) {
     if (!event.target.matches('.dropdown-toggle')) {
@@ -28,5 +24,4 @@ window.onclick = function(event) {
             dropdowns[i].classList.remove('active');
         }
     }
-
 };
