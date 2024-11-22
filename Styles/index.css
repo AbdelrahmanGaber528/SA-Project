@@ -203,7 +203,7 @@ footer {
 */
 
 /* the search */
-.search-container {
+.search {
     /*center on the screen*/
     position: fixed;
     top: 42%;
@@ -227,6 +227,9 @@ footer {
     outline: none;
     font-size: 16px;
 }
+.search-bar:focus{
+    color: rgb(0, 64, 128);
+}
 
 /*the search button */
 
@@ -234,7 +237,7 @@ footer {
     padding: 10px 20px;
     border: none;
     background-color: #64280f;
-    color: #00b7ff;
+    color: #F5F5DC;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     font-size: 18px;
