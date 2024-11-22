@@ -1,0 +1,232 @@
+/* Navbar Styles */
+body{
+    /* background-color: #003366; */
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.navbar-brand a {
+    color: #003366;
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 55px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap:50px;
+}
+
+.navbar-links li a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.cart-icon {
+    color:#003366;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 35px;
+    margin-left: 200px;
+}
+
+/* menu categories */
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFF5E1;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight:100;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+/* Show dropdown on active */
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+
+/* sidebar ********************************************************************/
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  #7E4B3C;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #767a7b;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+}
+
+.open-btn {
+    font-size: 18px;
+    padding: 7px 15px;
+    background-color: #5b6464;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.open-btn:hover {
+    background-color: #555;
+}
+/*
+
+.earth-tone-brown {
+    color: #7E4B3C;  Brown resembling wood 
+}
+
+.earth-tone-beige {
+    color: #F5F5DC; /* Beige 
+}
+
+.earth-tone-cream {
+    color: #FFF5E1; /* Cream 
+}
+
+
+.dark-green {
+    color: #2F4F4F; /* Dark Green 
+}
+
+.dark-green-bg {
+    background-color: #2F4F4F; /* Dark Green background 
+}
+
+
+.deep-blue {
+    color: #003366; /* Deep Blue 
+}
+
+.deep-blue-bg {
+    background-color: #003366; /* Deep Blue background 
+}
+
+.white-bg {
+    background-color: #FFFFFF; /* White background 
+}
+
+.cream-bg {
+    background-color: #FFF5E1; /* Cream background 
+}
+
+.gold-accent {
+    color: #FFD700;  Gold 
+}
+
+.light-orange {
+    color: #FFA500; /* Light Orange 
+}
+
+/* Header & Navigation example *
+header {
+    background-color: #003366; /* Deep Blue 
+    color: #FFFFFF; /* White text 
+    padding: 15px;
+}
+
+nav a {
+    color: #FFFFFF; /* White text for links 
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold accent on hover 
+}
+
+/* Content Area 
+.content {
+    background-color: #FFF5E1; /* Cream background 
+    color: #333; /* Dark text color 
+    padding: 20px;
+}
+
+/* Footer 
+footer {
+    background-color: #7E4B3C; /* Earth-tone brown 
+    color: #FFF5E1; /* Light Cream text 
+    padding: 10px;
+    text-align: center;
+}
+*/
