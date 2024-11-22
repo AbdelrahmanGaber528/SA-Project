@@ -503,32 +503,22 @@ footer {
 }
 
 
-/* FOoooter/
+/* FOoooter*/
 
-/* Footer Styling */
 .footer {
-    background-color: #333;
+    /* display: grid; */
+    background-color: #003366;
     color: white;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
+    padding: 5px 20px;
     text-align: center;
+    margin-top: 30px;
 }
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
 .footer-section {
-    width: 30%;
-    margin: 10px;
+    width: 100%;
 }
-
 .footer-section h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .footer-section ul {
@@ -542,7 +532,7 @@ footer {
 
 .footer-section ul li a {
     text-decoration: none;
-    color: #ccc;
+    color: #F5F5DC;
     transition: color 0.3s ease;
 }
 
@@ -557,12 +547,12 @@ footer {
 
 .social-links a {
     text-decoration: none;
-    color: #ccc;
+    color: #FFF5E1;
     font-size: 18px;
 }
 
 .social-links a:hover {
-    color: #f39c12;
+    color: #e8a12e;
 }
 
 .footer-bottom {
