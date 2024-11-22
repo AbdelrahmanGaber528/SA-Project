@@ -42,11 +42,11 @@ body{
 
 
 .cart-icon {
-    color:#003366;
-    font-size: 30px;
+    font-size: 38px;
     text-decoration: none;
     margin-right: 35px;
     margin-left: 200px;
+    margin-bottom: 10px;
 }
 
 
@@ -112,7 +112,7 @@ body{
     left: 0;
     background-color:   #7E4B3C;
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.4s;
     padding-top: 60px;
 }
 
