@@ -40,7 +40,23 @@ body{
     gap: 15px;
 }
 
-
+.login{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: -180px;
+    border-radius:10px;
+    border-width: 1px;
+    border-color: #003366;
+    border-style: dotted;
+    padding:8px;
+    color: #003366;
+    background-color: #fff;
+    /* height: 40px; */
+}
+.login:hover{
+    cursor: pointer;
+}
 .cart-icon {
     font-size: 38px;
     text-decoration: none;
