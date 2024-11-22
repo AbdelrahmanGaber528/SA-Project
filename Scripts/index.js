@@ -53,15 +53,14 @@ window.onclick = function(event) {
 /********************/
 
 let saveAddedBooks = [];
-// to change the text on the button when clicked  //
 
 document.querySelectorAll(".cart-button").forEach(button => {
     button.addEventListener("click", function() {
         
-        
+        // to change the txt on btn when clicked
         button.innerHTML = "Added to Cart";
         button.style.opacity =1;
-        
+
         // Get the parent card element
         let card = button.closest('.card'); 
         

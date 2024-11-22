@@ -321,7 +321,6 @@ footer {
 
     transition: opacity 0.5s ease;
 }
-/*/   */
 .card:hover .cart-button{
     opacity: 1; 
 }
@@ -329,7 +328,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-.discover{
+.discover-btn{
     text-decoration: none;
     color: #003366;
 }
