@@ -11,7 +11,8 @@ function Dropdown(event) {
 }
 
 function openSidebar() {
-    document.getElementById("sidebar").style.width = "250px";
+    const side = document.getElementById("sidebar");
+    side.style.width = "250px";
 }
 
 function closeSidebar() {

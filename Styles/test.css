@@ -107,7 +107,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-color:  #7E4B3C;
+    background-color:   #7E4B3C;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -117,14 +117,14 @@ body{
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
-    color: #fff;
+    color: #FFF5E1;
     font-weight: bold;
     display: block;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    background-color: #767a7b;
+    background-color:   #f5b53f;
 }
 
 .close-btn {
@@ -138,7 +138,7 @@ body{
 .open-btn {
     font-size: 18px;
     padding: 7px 15px;
-    background-color: #5b6464;
+    background-color:  #2F4F4F;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -147,8 +147,8 @@ body{
     left: 20px;
 }
 
-.open-btn:hover {
-    background-color: #555;
+.open-btn:hover{
+    background-color:  #258989;
 }
 /*
 
