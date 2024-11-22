@@ -26,13 +26,16 @@ function Dropdown(event) {
 /***************************************************************** */
 /***************************************************************** */
 
+// Open the sidebar
 function openSidebar() {
     const side = document.getElementById("sidebar");
-    side.style.width = "250px";
+    side.classList.add("open");  // Add the 'open' class to show the sidebar
 }
 
+// Close the sidebar
 function closeSidebar() {
-    document.getElementById("sidebar").style.width = "0";
+    const side = document.getElementById("sidebar");
+    side.classList.remove("open");  // Remove the 'open' class to hide the sidebar
 }
 
 /***************************************************************** */
