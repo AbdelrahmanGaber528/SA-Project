@@ -52,7 +52,6 @@ body{
     padding:8px;
     color: #003366;
     background-color: #fff;
-    /* height: 40px; */
 }
 .login:hover{
     cursor: pointer;
