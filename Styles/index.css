@@ -265,27 +265,32 @@ footer {
     width: 280px; 
     height: 300px;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 18px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    margin: 20px;
+    margin: 30px;
     margin-left: 150px;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+    cursor: pointer;
 }
 .img-card {
     width: 100%;
 }
+.book-img{
+    width: 280px;
+    height: 240px;
+}
 .card-info{
-    padding: 15px;
+    padding: 5px;
     text-align: center;
 }
 .Card-title{
     font-size: 20px;
     margin: 10px 0;
-    color: #258989;
+    color: #800020;
 
 }
 .Card-button{
@@ -297,15 +302,34 @@ footer {
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s;
 }
 .Card-button:hover{
     background-color: #ba7900;
 }
+.cart-button{
+    opacity: 0;
+    padding: 8px;
+    width: 70%;
+    border: solid;
+    background-color: #fff;
+    color: #003366;
+    font-style: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform:uppercase;
+
+    transition: opacity 0.5s ease;
+}
+/*/   */
+.card:hover .cart-button{
+    opacity: 1; 
+}
 .books-examples{
     display: flex;
+    flex-wrap: wrap;
 }
 .discover{
     text-decoration: none;
-    color: #fff;
+    color: #003366;
 }

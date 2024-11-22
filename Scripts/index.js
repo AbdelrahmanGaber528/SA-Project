@@ -49,3 +49,30 @@ window.onclick = function(event) {
         }
     }
 };
+
+/********************/
+
+let saveAddedBooks = [];
+// to change the text on the button when clicked  //
+
+document.querySelectorAll(".cart-button").forEach(button => {
+    button.addEventListener("click", function() {
+        
+        
+        button.innerHTML = "Added to Cart";
+        button.style.opacity =1;
+        
+        // Get the parent card element
+        let card = button.closest('.card'); 
+        
+        if (card) {
+            let bookTitle = card.querySelector('.Card-title').innerHTML;
+
+            saveAddedBooks.push({
+                title: bookTitle,
+                id: saveAddedBooks.length 
+            });
+        }
+    });
+
+});
