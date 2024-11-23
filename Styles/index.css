@@ -519,6 +519,8 @@ footer {
 .footer-section h4 {
     font-size: 20px;
     margin-bottom: 15px;
+    color: #df9100;
+    text-transform: uppercase;
 }
 
 .footer-section ul {
