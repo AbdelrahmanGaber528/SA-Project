@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology</title>
+    <title>Book Store</title>
+    <link rel="stylesheet" href="Styles/cart.css">
     <link rel="stylesheet" href="Styles/categories.css">
     <link rel="shortcut icon" href="Images/Web_Icon.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
 
+    <nav class="navbar">
         <!-- sidebar -->
         <button class="open-btn" onclick="openSidebar()">☰</button>
     <div class="sidebar" id="sidebar">
@@ -25,7 +25,7 @@
     <!-- end of the sidebar -->
 
         <div class="navbar-brand">
-            <a href="index.html">Bookstore</a>
+            <a class="header-title" href="index.html">Bookstore</a>
         </div>
         <ul class="navbar-links">
             <li><a href="index.html">Home</a></li>
@@ -43,49 +43,24 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
         
-           <div class="search">
+        <div class="search">
             <input type="text" placeholder="Search for Book..." class="search-bar">
             <button class="search-button">Search</button>
         </div>
         <div class="navbar-icons">
-                <a href="#" class="login">Login</a>
-                <a href="cart.html" class="cart-icon">🛒</a>
+            <a href="#" class="login">Login</a>
+        <a href="cart.html" class="cart-icon">🛒</a>
+    </div>
+</nav>
+        
+        <h1>Your Cart</h1>
+        <div id="cart"></div>
+        <button class="make-payment" onclick="makePayment()"><a href="makePayment.html">Make Payment</a></button>
 
-        </div>
 
-     
-    </nav>
-    <!-- Content Section -->
-    <h2 class="title-section">Popular Books</h2>
-    <section class="books-examples">
-        <div class="card book">
-            <img src="Images\tech_1.jpg" alt="Steve Jobs" class="book-img">
-            <div class="card-info">
-                <h3 class="card-title">Steve Jobs</h3>
-                <button class="cart-button">Quick Add</button>
-            </div>
-        </div>
-     <div class="card book">
-        <img src="Images/tech_2.jpg" alt="The Shallows" class="book-img">
-            <div class="card-info">
-                <h3 class="card-title">The Shallows</h3>
-                <button class="cart-button">Quick Add</button>
-            </div>
-        </div>
+    <!--Footer -->
 
- 
-
-        <div class="card book">
-            <img src="Images/tech_3.jpg" alt="Digital Minimalism" class="book-img">
-            <div class="card-info">
-                <h3 class="card-title">Digital Minimalism</h3>
-                <button class="cart-button">Quick Add</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer-section">
             <h4>Bookstore</h4>
             <ul>
@@ -94,11 +69,11 @@
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Bookstore. All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bookstore. All rights reserved.</p>
+    </div>
+</footer> -->
 
-    <script src="Scripts/index.js"></script>
+<script src="Scripts/index.js"></script>
 </body>
 </html>

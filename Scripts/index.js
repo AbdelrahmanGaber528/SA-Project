@@ -51,23 +51,9 @@ window.onclick = function(event) {
 
 document.querySelectorAll(".cart-button").forEach(button => {
     button.addEventListener("click", function() {
-        
         // to change the txt on btn when clicked
         button.innerHTML = "Added to Cart";
         button.style.opacity =1;
-
-        // Get the parent card element
-        const card = button.closest('.card'); 
-        
-        if (card) {
-            
-            // const bookTitle = card.querySelector('.Card-title').innerHTML;
-
-            // saveAddedBooks.push({
-            //     title: bookTitle,
-            //     id: saveAddedBooks.length 
-            // });
-        }
     });
 });
 

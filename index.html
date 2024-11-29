@@ -44,7 +44,7 @@
         
         <div class="navbar-icons">
                 <a href="#" class="login">Login</a>
-            <a href="#" class="cart-icon">🛒</a>
+            <a href="cart.html" class="cart-icon">🛒</a>
         </div>
     </nav>
 
@@ -92,14 +92,14 @@
 
     <h2 class="title-section">Popular Books</h2>
     <section class="books-examples">
-        <div class="card">
+        <div class="card book">
             <img src="Images/b-h1.jpg" alt="Ghosts of Crook County" class=" book-img">
         <div class="card-info">
             <h3 class="Card-title">Ghosts of Crook County</h3>
-            <button class="cart-button">Quick add</button>
+            <button class="cart-button" onclick="addToCart('book2.jpg', 'Book Title 2', 15, 'An inspiring book about life.')">Quick add</button>
         </div>
     </div>
-    <div class="card">
+    <div class="card book">
         <img src="Images/b-s1.avif" alt="Criminal Identification" class=" book-img">
     <div class="card-info">
         <h3 class="Card-title">A History of Fingerprinting </h3>
@@ -113,21 +113,21 @@
             <button class="cart-button">Quick add</button>
         </div>
     </div>
-    <div class="card">
+    <div class="card  book">
             <img src="Images/b-t2.avif" alt="The Sounds of Life" class=" book-img">
         <div class="card-info">
             <h3 class="Card-title">The Sounds of Life</h3>
             <button class="cart-button">Quick add</button>
         </div>
     </div>
-    <div class="card">
+    <div class="card book">
             <img src="Images/b-s2.avif" alt="The Earth After Us" class=" book-img">
         <div class="card-info">
             <h3 class="Card-title">The Earth After Us</h3>
             <button class="cart-button">Quick add</button>
         </div>
     </div>
-    <div class="card">
+    <div class="card book">
             <img src="Images/red-parts.avif" alt="Red-Parts" class=" book-img">
         <div class="card-info">
             <h3 class="Card-title">Red Parts</h3>
@@ -154,5 +154,6 @@
     </footer>
     
     <script src="Scripts/index.js"></script>
+    <script src="Scripts/search.js"></script>   
 </body>
 </html>
