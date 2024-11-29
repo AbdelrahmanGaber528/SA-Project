@@ -45,9 +45,9 @@ window.onclick = function(event) {
     }
 };
 
+
 /********************/
 
-let saveAddedBooks = [];
 
 document.querySelectorAll(".cart-button").forEach(button => {
     button.addEventListener("click", function() {
@@ -60,12 +60,13 @@ document.querySelectorAll(".cart-button").forEach(button => {
         const card = button.closest('.card'); 
         
         if (card) {
-            const bookTitle = card.querySelector('.Card-title').innerHTML;
+            
+            // const bookTitle = card.querySelector('.Card-title').innerHTML;
 
-            saveAddedBooks.push({
-                title: bookTitle,
-                id: saveAddedBooks.length 
-            });
+            // saveAddedBooks.push({
+            //     title: bookTitle,
+            //     id: saveAddedBooks.length 
+            // });
         }
     });
 });
