@@ -1,8 +1,6 @@
 
 //  Dropdown Menu Categories
 
-/***************************************************************** */
-/***************************************************************** */
 
 function Dropdown(event) {
 
@@ -12,19 +10,15 @@ function Dropdown(event) {
     */
     
     const dropdown = event.target.closest('.dropdown');
-    /*ou ensure that only the dropdown related to the clicked element is toggled,
+    /* ensure that only the dropdown related to the clicked element is toggled,
      not all dropdowns on the page. */
     
     dropdown.classList.toggle('active');
 }
 
-/***************************************************************** */
-/***************************************************************** */
 
 /** Sidebar funcitons  */
 
-/***************************************************************** */
-/***************************************************************** */
 
 // Open the sidebar
 function openSidebar() {
@@ -38,8 +32,6 @@ function closeSidebar() {
     side.classList.remove("open");  // Remove the 'open' class to hide the sidebar
 }
 
-/***************************************************************** */
-/***************************************************************** */
 
 
 // Close dropdown  if clicked outside
@@ -65,10 +57,10 @@ document.querySelectorAll(".cart-button").forEach(button => {
         button.style.opacity =1;
 
         // Get the parent card element
-        let card = button.closest('.card'); 
+        const card = button.closest('.card'); 
         
         if (card) {
-            let bookTitle = card.querySelector('.Card-title').innerHTML;
+            const bookTitle = card.querySelector('.Card-title').innerHTML;
 
             saveAddedBooks.push({
                 title: bookTitle,
@@ -76,5 +68,5 @@ document.querySelectorAll(".cart-button").forEach(button => {
             });
         }
     });
-
 });
+
