@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="Styles/categories.css">
+    <link rel="shortcut icon" href="Images/Web_Icon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <!-- sidebar -->
+        <button class="open-btn" onclick="openSidebar()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="science.html">Science</a>
+        <a href="history.html">History</a>
+        <a href="tech.html">Technology</a>
+        <a href="fiction.html">Fiction</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <!-- end of the sidebar -->
+
+        <div class="navbar-brand">
+            <a href="index.html">HISTORY</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            
+            <!-- Categories Dropdown -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle"onclick="Dropdown(event)" >Categories    ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="science.html">Science</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tech.html">Technology</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        
+           <div class="search">
+            <input type="text" placeholder="Search for Book..." class="search-bar">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="navbar-icons">
+                <a href="#" class="login">Login</a>
+            <a href="#" class="cart-icon">🛒</a>
+        </div>
+
+     
+    </nav>
+    <!-- Content Section -->
+    <h2 class="title-section">Popular Books</h2>
+    <section class="books-examples">
+        <div class="card">
+            <img src="Images/history_1.jpg" alt="John Adams" class="book-img">
+            <div class="card-info">
+                <h3 class="card-title">John Adams</h3>
+                <button class="cart-button">Quick Add</button>
+            </div>
+        </div>
+     <div class="card">
+        <img src="Images/history_2.jpg" alt="History of Nazi Germany" class="book-img">
+            <div class="card-info">
+                <h3 class="card-title">History of Nazi Germany</h3>
+                <button class="cart-button">Quick Add</button>
+            </div>
+        </div>
+
+ 
+
+        <div class="card">
+            <img src="Images/history_3.jpg" alt="The Guns of August" class="book-img">
+            <div class="card-info">
+                <h3 class="card-title">The Guns of August</h3>
+                <button class="cart-button">Quick Add</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Bookstore</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bookstore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,529 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Navbar Styles */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.navbar-brand a {
+    color: #003366;
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 57px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap:50px;
+}
+
+.navbar-links li a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: -180px;
+    border-radius:10px;
+    border-width: 1px;
+    border-color: #003366;
+    border-style: dotted;
+    padding:8px;
+    color: #003366;
+    background-color: #fff;
+}
+.login:hover{
+    cursor: pointer;
+}
+.cart-icon {
+    font-size: 38px;
+    text-decoration: none;
+    margin-right: 35px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+
+/* Dropdown Menu Styles */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 0;
+    background-color: #FFF5E1;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight:100;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+/* Show dropdown on active */
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+
+/* sidebar ********************************************************************/
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:   #7E4B3C;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF5E1;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color:   #f5b53f;
+}
+
+/* Body reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 15px;
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Add a background color */
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for separation */
+}
+
+/* Adjusting the main content to prevent overlap */
+body {
+    padding-top: 60px; /* Make space for the navbar */
+}
+
+/* Navbar links */
+.navbar-brand a {
+    color: #003366;
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 57px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar-links li a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: -180px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #003366;
+    border-style: dotted;
+    padding: 8px;
+    color: #003366;
+    background-color: #fff;
+}
+
+.login:hover {
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 38px;
+    text-decoration: none;
+    margin-right: 35px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 0;
+    background-color: #FFF5E1;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: 100;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+/* Show dropdown on active */
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+/* Main photo styling */
+.main-photo img {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;  /* Start with a width of 0 (hidden) */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #7E4B3C;
+    overflow-x: hidden;
+    transition: 0.4s; 
+    padding-top: 60px; 
+    z-index: 3; 
+}
+.sidebar.open { 
+    width: 250px; 
+}
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF5E1;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #f5b53f;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+}
+
+.open-btn {
+    font-size: 18px;
+    padding: 3px 13px;
+    background-color: #3a5c5c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+
+.open-btn:hover {
+    background-color: #258989;
+}
+
+
+/*
+    <!----some colors----!>
+
+.earth-tone-brown {
+    color: #7E4B3C;  Brown resembling wood 
+}
+
+.earth-tone-beige {
+    color: #F5F5DC; /* Beige 
+}
+
+.earth-tone-cream {
+    color: #FFF5E1; /* Cream 
+}
+
+
+.dark-green {
+    color: #2F4F4F; /* Dark Green 
+}
+
+.dark-green-bg {
+    background-color: #2F4F4F; /* Dark Green background 
+}
+
+/* Footer 
+footer {
+    background-color: #7E4B3C; /* Earth-tone brown 
+    color: #FFF5E1; /* Light Cream text 
+    padding: 10px;
+    text-align: center;
+}
+*/
+
+/* the search */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+    padding: 6px 12px;
+    background-color: #64280f;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/*the search button */
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #64280f;
+    color: #F5F5DC;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.search-button:hover {
+    background-color: #813616;
+}
+
+/**************** End of the search bar , section , header , navbar ****************/
+
+/* Section 2 : categeries */
+.title-section{
+    margin-top: 55px;
+    margin-left: 17.8em;
+    font-size: 35px;
+    color:#ba7900;
+    display: inline-block;
+    border-bottom: 3px solid #64280f;
+    padding-bottom: 5px;
+}
+
+/* Books Section */
+.books-examples {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للعناصر بالالتفاف عند صغر الشاشة */
+    justify-content: center; /* محاذاة العناصر في المنتصف */
+    gap: 20px; /* مسافة بين الكتب */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.card {
+    width: 200px; /* عرض موحّد للبطاقات */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-img {
+    width: 100%; /* تجعل الصور تتكيف مع عرض البطاقة */
+    height: 200px;
+    object-fit: cover; /* يجعل الصورة تظهر بشكل مناسب */
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.cart-button {
+    background-color: #64280f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #8a3612;
+}
+
+
+
+/* FOoooter*/
+
+.footer {
+    /* display: grid; */
+    background-color: #003366;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    margin-top: 207px;
+}
+.footer-section {
+    width: 100%;
+}
+.footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #df9100;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #F5F5DC;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f39c12;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #FFF5E1;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    color: #e8a12e;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
