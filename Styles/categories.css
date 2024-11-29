@@ -18,6 +18,7 @@ body{
     text-decoration: none;
     font-size: 35px;
     margin-left: 57px;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -121,7 +122,9 @@ body{
     transition: 0.4s;
     padding-top: 60px;
 }
-
+.sidebar.open { 
+    width: 250px; 
+}
 .sidebar a {
     padding: 10px 20px;
     text-decoration: none;
@@ -135,6 +138,32 @@ body{
 .sidebar a:hover {
     background-color:   #f5b53f;
 }
+
+
+.open-btn {
+    font-size: 18px;
+    padding: 3px 13px;
+    background-color: #3a5c5c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+}
+
+
+.open-btn:hover {
+    background-color: #258989;
+}
+
 
 /*
     <!----some colors----!>
