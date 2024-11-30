@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Styles/index.css">
     <link rel="shortcut icon" href="Images/Web_Icon.png" type="image/x-icon">
 </head>
-<body>
+<body class="index-page">
     <nav class="navbar">
 
         <!-- sidebar -->
@@ -94,16 +94,16 @@
     <section class="books-examples">
         <div class="card book">
             <img src="Images/b-h1.jpg" alt="Ghosts of Crook County" class=" book-img">
-        <div class="card-info">
+        <div class="card-info" data-image="Images/b-h1.jpg" data-title="Ghosts of Crook County" data-price="15" data-description="An inspiring book about life.">
             <h3 class="Card-title">Ghosts of Crook County</h3>
-            <button class="cart-button" onclick="addToCart('book2.jpg', 'Book Title 2', 15, 'An inspiring book about life.')">Quick add</button>
+            <button class="cart-button" onclick="addToCart(this)">Quick add</button>
         </div>
     </div>
-    <div class="card book">
+    <div class="card book" >
         <img src="Images/b-s1.avif" alt="Criminal Identification" class=" book-img">
-    <div class="card-info">
+    <div class="card-info" data-image="Images/b-s1.avif" data-title="A History of Fingerprinting " data-price="15" data-description="An inspiring book about life.">
         <h3 class="Card-title">A History of Fingerprinting </h3>
-        <button class="cart-button">Quick add</button>
+        <button class="cart-button"onclick="addToCart(this)" >Quick add</button>
     </div>
 </div>
 <div class="card">
@@ -154,6 +154,6 @@
     </footer>
     
     <script src="Scripts/index.js"></script>
-    <script src="Scripts/search.js"></script>   
+    <script src="Scripts/addToCart.js"></script>   
 </body>
 </html>
