@@ -7,13 +7,12 @@ function addToCart(button) {
     const image = bookElement.getAttribute("data-image");
     const title = bookElement.getAttribute("data-title");
     const price = parseFloat(bookElement.getAttribute("data-price"));
-    const description = bookElement.getAttribute("data-description");
 
     // Get existing cart data from localStorage
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     // Add the new book to the cart
-    cart.push({ image, title, price, description });
+    cart.push({ image, title, price });
 
     // Save the updated cart back to localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
