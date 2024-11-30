@@ -23,7 +23,7 @@
     font-size: 23px;
 }
 .cart-item img {
-    width: 200px;
+    width: 170px;
     height: auto;
     margin-right: 20px;
 }
@@ -86,12 +86,12 @@
     margin: 15px;
 
 }
-.amount-btn{
+.increase-btn , .decrease-btn{
     font-size: 30px;
     border: none;
     width: 40px;
     color:rgb(22, 22, 22)
 }
-.amount-btn:hover{
+.decrease-btn:hover , .increase-btn:hover{
     cursor: pointer;
 }

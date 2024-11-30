@@ -60,16 +60,16 @@
     <section class="books-examples">
         <div class="card book">
             <img src="Images\fiction_1.jpg" alt="1984(George Orwell)" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images\fiction_1.jpg" data-title="1984(George Orwell)" data-price="85">
                 <h3 class="card-title">1984(George Orwell)</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button"onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
      <div class="card book">
         <img src="Images/fiction_2.jpg" alt="The Catcher in the Rye" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images/fiction_2.jpg" data-title="The Catcher in the Rye" data-price="33">
                 <h3 class="card-title">The Catcher in the Rye</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button"onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
 
@@ -77,9 +77,9 @@
 
         <div class="card book">
             <img src="Images/fiction_3.jpg" alt="The Hunger Games" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images/fiction_3.jpg" data-title="The Hunger Games" data-price="20">
                 <h3 class="card-title">The Hunger Games</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button"onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
     </section>
@@ -100,5 +100,7 @@
     </footer>
 
     <script src="Scripts/index.js"></script>
+    <script src="Scripts/Search.js"></script>   
+    <script src="Scripts/addToCart.js"></script>
 </body>
 </html>

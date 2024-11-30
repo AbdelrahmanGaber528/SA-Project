@@ -61,25 +61,25 @@
     <section class="books-examples">
         <div class="card book">
             <img src="Images/science_1.jpg" alt="A Brief History of Time" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images/science_1.jpg" data-title="A Brief History of Time" data-price="100">
                 <h3 class="card-title">A Brief History of Time</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button" onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
 
         <div class="card book">
             <img src="Images/science_2.jpg" alt="A History of Fingerprinting" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images/science_2.jpg" data-title="A History of Fingerprinting" data-price="30">
                 <h3 class="card-title">A History of Fingerprinting</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button" onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
 
         <div class="card book">
             <img src="Images/science_3.jpg" alt="COSMOS" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images/science_3.jpg" data-title="A Brief History of Time" data-price="66">
                 <h3 class="card-title">COSMOS</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button" onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
     </section>
@@ -99,6 +99,8 @@
         </div>
     </footer>
 
+    <script src="Scripts/addToCart.js"></script>
+    <script src="Scripts/Search.js"></script>   
     <script src="Scripts/index.js"></script>
 </body>
 </html>

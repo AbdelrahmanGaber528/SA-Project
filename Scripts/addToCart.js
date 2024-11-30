@@ -39,11 +39,11 @@ if (cart.length === 0) {
             <div>
                 <h3>${item.title}</h3>
                 <p class="price">Price: $${item.price}</p>
-                <p>${item.description}</p>
+                <p>${generateRandomBookDescription()}</p>
                 <button class="delete-btn">Delete</button>
                 <span class="amount">${1}</span>
-                <button class="amount-btn"onclick="downNum()" >-</button>
-                <button class="amount-btn" onclick="upNum()">+</button>
+                <button class="decrease-btn"onclick="" >-</button>
+                <button class="increase-btn" onclick="">+</button>
             </div>
         `;
         cartContainer.appendChild(cartItem);
@@ -77,21 +77,109 @@ function delBook(){
 }
 delBook();
 
-    // // clear the cart when refresh the page : 
-    // window.addEventListener('beforeunload', () => {
-    // const currentUrl = window.location.href;
-    // const homepageUrl = 'http://127.0.0.1:5500/cart.html';
-    
-    // if (currentUrl === homepageUrl) {
-    //     localStorage.clear();
-    // }
-    // });
+const amount = document.querySelectorAll('.amount');
+const increase = document.querySelectorAll('.increase-btn');
+const decrease = document.querySelectorAll('.decrease-btn');
 
-    // increase and decrease the number of products:
-const amount = document.querySelector('.amount');
-function upNum(){
-    amount.innerHTML ++;
-}
-function downNum(){
-    amount.innerHTML-=1;
-}
+// increase.forEach(item =>{
+//     amount.forEach((index)=>{
+//         item.addEventListener('click',()=>{
+//             index.innerHTML ++;
+//         })
+//     })
+// })
+
+increase.forEach((btn, index) => {
+btn.addEventListener('click', () => {
+    const amountElement = amount[index];
+    const currentAmount = parseInt(amountElement.textContent);
+    amountElement.textContent = currentAmount + 1;
+});
+});
+decrease.forEach((btn, index) => {
+btn.addEventListener('click', () => {
+    const amountElement = amount[index];
+    const currentAmount = parseInt(amountElement.textContent);
+    if (currentAmount > 1) {
+    amountElement.textContent = currentAmount - 1;
+    }
+});
+});
+
+
+
+
+function generateRandomBookDescription() {
+    const genres = [
+        "Science Fiction",
+        "Fantasy",
+        "Mystery",
+        "Romance",
+        "Historical Fiction",
+        "Thriller",
+        "Dystopian",
+        "Horror",
+        "Young Adult",
+        "Non-Fiction",
+        "Graphic Novel",
+        "Poetry",
+        "Short Story Collection"
+      ];
+    
+      const themes = [
+        "love",
+        "loss",
+        "revenge",
+        "redemption",
+        "power",
+        "identity",
+        "hope",
+        "fear",
+        "greed",
+        "ambition",
+        "sacrifice",
+        "betrayal",
+        "coming-of-age"
+      ];
+    
+      const settings = [
+        "a distant planet",
+        "a forgotten city",
+        "a futuristic metropolis",
+        "a medieval kingdom",
+        "a dystopian wasteland",
+        "a small town",
+        "a big city",
+        "a haunted house",
+        "a secret society",
+        "a magical realm"
+      ];
+    
+      const plotPoints = [
+        "a mysterious disappearance",
+        "a forbidden love affair",
+        "a dangerous quest",
+        "a shocking revelation",
+        "a battle between good and evil",
+        "a time-traveling adventure",
+        "a detective investigation",
+        "a supernatural encounter",
+        "a political conspiracy",
+        "a personal journey of self-discovery"
+      ];
+  
+    // Randomly select a genre, theme, and setting
+    const randomGenre = genres[Math.floor(Math.random() * genres.length)];
+    const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+    const randomSetting = settings[Math.floor(Math.random() * settings.length)];
+    const randomPlotPoints = plotPoints[Math.floor(Math.random() * plotPoints.length)];
+    // Generate a random description using template literals
+    const description = `A ${randomGenre} novel set in ${randomSetting}. It explores themes of ${randomTheme} as ${randomPlotPoints}.`;
+  
+    return description;
+  }
+
+   // to clear the saved shopping 
+window.addEventListener('beforeunload',()=>{
+    localStorage.clear();
+})

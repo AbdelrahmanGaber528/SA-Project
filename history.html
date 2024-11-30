@@ -60,16 +60,16 @@
     <section class="books-examples">
         <div class="card book">
             <img src="Images/history_1.jpg" alt="John Adams" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images/history_1.jpg" data-title="John Adams" data-price="15">
                 <h3 class="card-title">John Adams</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button" onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
      <div class="card book">
         <img src="Images/history_2.jpg" alt="History of Nazi Germany" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images/history_2.jpg" data-title="History of Nazi Germany" data-price="25">
                 <h3 class="card-title">History of Nazi Germany</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button" onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
 
@@ -77,9 +77,9 @@
 
         <div class="card book">
             <img src="Images/history_3.jpg" alt="The Guns of August" class="book-img">
-            <div class="card-info">
+            <div class="card-info" data-image="Images/history_3.jpg" data-title="The Guns of August" data-price="55">
                 <h3 class="card-title">The Guns of August</h3>
-                <button class="cart-button">Quick Add</button>
+                <button class="cart-button" onclick="addToCart(this)">Quick Add</button>
             </div>
         </div>
     </section>
@@ -100,5 +100,7 @@
     </footer>
 
     <script src="Scripts/index.js"></script>
+    <script src="Scripts/Search.js"></script>   
+    <script src="Scripts/addToCart.js"></script>
 </body>
 </html>
