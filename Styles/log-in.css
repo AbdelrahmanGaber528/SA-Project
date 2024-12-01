@@ -1,24 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Navbar Styles */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #fff;
     padding-top: 10px;
-    padding-left: 15px;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Add a background color */
 }
 
+/* Navbar links */
 .navbar-brand a {
     color: #003366;
     text-decoration: none;
     font-size: 35px;
-    margin-left: 57px;
+    margin-left: 55px;
     font-weight: bold;
 }
 
 .navbar-links {
     list-style: none;
     display: flex;
-    gap:50px;
+    gap: 50px;
 }
 
 .navbar-links li a {
@@ -27,6 +37,12 @@
     text-decoration: none;
     font-size: 22px;
 }
+.cart-icon {
+    font-size: 38px;
+    text-decoration: none;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}
 
 .navbar-icons {
     display: flex;
@@ -34,35 +50,7 @@
     gap: 15px;
 }
 
-.log{
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    margin-right: -180px;
-    border-radius:20px;
-    background-color: #fff;
-    padding:8px;
-    color: #003366;
-}
-.log:hover{
-    cursor: pointer;
-}
-.cart-icon {
-    font-size: 38px;
-    text-decoration: none;
-    margin-right: 35px;
-    margin-left: 200px;
-    margin-bottom: 10px;
-}
-.Signup{
-    position: relative;
-    right:20px;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    background-color: #fff;
-    border:2px;
-}
+/* Dropdown Menu Styles */
 .dropdown {
     position: relative;
 }
@@ -70,6 +58,7 @@
 .dropdown-toggle {
     cursor: pointer;
 }
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -89,7 +78,7 @@
     text-decoration: none;
     padding: 10px 20px;
     display: block;
-    font-weight:100;
+    font-weight: 100;
 }
 
 .dropdown-menu li a:hover {
@@ -98,10 +87,12 @@
 }
 
 /* Show dropdown on active */
-
 .dropdown.active .dropdown-menu {
     display: block;
 }
+
+
+/* Sidebar */
 .sidebar {
     height: 100%;
     width: 0;  /* Start with a width of 0 (hidden) */
@@ -155,91 +146,52 @@
     background-color: #258989;
 }
 
-.Login{
-    width:800px;
-    background-color:#003366;
-    height:600px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    position: relative;
-    left:200px;
-    }
-    .img2{
-        position: relative;
-        left:800px;
-        bottom:50px;
-        background-color:#64280f;
-        height:600px;
-        width:400px;
-    }
-    .Login:hover{
-    animation:translate;
-    animation-duration:3s;
-    animation-iteration-count: infinite;
-    }
-    @keyframes  translate{
-        to{
-            transform: translatey(-10px);
-        }
-    }
-    .Login input,p{
-    position: relative;
-    bottom:640px;
-    left:200px;
-    border:none;
-    }
-    
-    .Login p{
-        font-size: 25px;
-        color:white;
-    }
-    .login input{
-        width:400px;
-        background-color:coral;
-    }
-    .Sign{
-    width:400px;
-    font-size:25px;
-    border:none;
-    background-color: red;
-    border-radius:100px;
-    position: relative;
-    left:200px;
-    bottom:710px;
-    transform:translatey(100px);
-    }
-    .input3{
-        position: relative;
-        bottom:25px;
-    }
-    .Paragraph{
-        position: relative;
-        bottom:630px;
-        left:20px;
-    }
-    .Link{
-        color:green;
-    }
 
+
+/*form photo*/
+.img{
+    background-color:hsl(18, 49%, 61%);
+    height: 350px;
+    width: 300px;
+    margin-right: 29em;
+}
+
+/* login form */
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.login-text{
+    border: solid;
+    border-width: 1px;
+    border-color: #e8a12e;
+    height: 318px;
+    width: 300px;
+    margin-left: 28.3em;
+    padding-left: 10px;
+    padding-top: 30px;
+    background-color: beige;
+}
+.login-text p{
+    color: ;
+}
+/* FOoooter*/
 
 .footer {
     /* display: grid; */
-    background-color: #003366;
+    background-color: #064b8f;
     color: white;
     padding: 5px 20px;
     text-align: center;
-    margin-top: 30px;
-    position: relative;
-    top:700px;
+    margin-top:250px;
 }
 .footer-section {
     width: 100%;
 }
 .footer-section h4 {
     font-size: 20px;
-    margin-bottom: 15px;
     color: #df9100;
     text-transform: uppercase;
 }
@@ -279,9 +231,6 @@
 }
 
 .footer-bottom {
-    margin-top: 20px;
     font-size: 14px;
     color: #ccc;
-    position: relative;
-    top:650px;
 }

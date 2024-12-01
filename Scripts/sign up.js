@@ -34,39 +34,24 @@ function closeSidebar() {
 
 
 
+/// sign up spacity code
 let z=document.querySelector("[name='first']")
-
-
 
 let q=document.querySelector("[name='Last']")
 
-
-
-
 let c=document.querySelector("[name='PhoneNumber']")
 
-
-
-
-
 let h=document.querySelector("[name='Password']")
-
-
-
-
-
 
 let p=document.querySelector("[name='Retry Password']")
 
 
-
-
 document.forms[0].onsubmit=function(e){
-   fnamevaild=false
-   lnamevaild=false
-   passvaild=false
-   phonenumbervaild=false
 
+    fnamevaild=false
+    lnamevaild=false
+    passvaild=false
+    phonenumbervaild=false
 
     if(z.value!=="" && z.value.length<=9){
         fnamevaild=true
@@ -85,6 +70,5 @@ document.forms[0].onsubmit=function(e){
         passvaild===false ||
         phonenumbervaild===false){
         e.preventDefault();
-           
     }
 }

@@ -1,27 +1,8 @@
 <html>
-
-
 <head>
-
-
-
-
-
-
-<link rel="stylesheet" href="sign up.css">
-
-
-
-
-
-
+<link rel="stylesheet" href="styles/sign up.css up.css">
 </head>
-
-
 <body>
-
-
-
     <nav class="navbar">
 
         <!-- sidebar -->
@@ -29,16 +10,16 @@
     <div class="sidebar" id="sidebar">
         <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
         <a href="index.html">Home</a>
-        <a href="#">Science</a>
-        <a href="#">History</a>
-        <a href="#">Technology</a>
-        <a href="#">Fiction</a>
+        <a href="science.html">Science</a>
+        <a href="history.html">History</a>
+        <a href="tech.html">Technology</a>
+        <a href="fiction.html">Fiction</a>
         <a href="#">Contact Us</a>
     </div>
     <!-- end of the sidebar -->
 
         <div class="navbar-brand">
-            <a href="index.html">Bookstore</a>
+            <a class="header-title" href="index.html">Bookstore</a>
         </div>
         <ul class="navbar-links">
             <li><a href="index.html">Home</a></li>
@@ -47,50 +28,35 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle"onclick="Dropdown(event)" >Categories    ▾</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">Fiction</a></li>
+                    <li><a href="science.html">Science</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tech.html">Technology</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
                 </ul>
             </li>
             <li><a href="#">Contact Us</a></li>
         </ul>
         
         <div class="navbar-icons">
-                <a href="#" class="log">Login</a>
             <a href="#" class="cart-icon">🛒</a>
-            <a href="#" class="Signup">Sign Up</a>
         </div>
     </nav>
 
-   
-
-
-
-
-
-
-
-
-    <div class="Login">
-    <form class="Forum" method="get">
-    <img src="https://booxtore.net/assets/images/deliver4.svg" width="200px" height="200px" class="img2">
-    <p>Enter Your First Name </p>
+    <div class="signup">
+    <form class="Form" method="get">
+    <img src="https://booxtore.net/assets/images/deliver4.svg" class="img2">
+    <p>Enter Your Name </p>
     <input class="input" type="text" placeholder="Write Your First Name Here"  required="" id="first" name="first">
-    <p>Enter Your Last Name</p>
-    <input class="input" type="text" placeholder="Write Your Last Name" required="" name="Last" id="Second">
     <p>Enter Your PhoneNumber</p>
     <input class="input" type="text" placeholder="Write Your PhoneNumber Here" required="" name="PhoneNumber" id="Third">
     <p>Enter Your Password</p>
     <input class="input" type="password" placeholder="Write Your Password Here" required="" name="Password" id="Fourth">
-    <p>Retry Your Password</p>
+    <p>Confirm Your Password</p>
     <input class="input" type="password" placeholder="ReWrite your password Here" required="" name="Retry Password" id="Fifth">
     <button class="Create">Create Account</button>
-    <p class="Paragraph">You Already Have An Account?<a href="E:\work3.html" class="Link">Enter Your Account Now</a></p>
+    <p class="Paragraph">You Already Have An Account?<a href="log in.html" class="link">Enter Your Account Now</a></p>
     </form>
     </div>
-
-
 
     <footer class="footer">
         <div class="footer-section">
@@ -104,31 +70,9 @@
     <div class="footer-bottom">
         <p>&copy; 2024 Bookstore. All rights reserved.</p>
     </div>
+
 </footer>
-
-
-
-
-
-<script src="sign up.js"></script>
-
-
-
-
-
-
+<script src="Scripts/sign up.js"></script>
+<script src="Scripts/index.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
