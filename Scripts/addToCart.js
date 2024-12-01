@@ -186,7 +186,7 @@ function generateRandomBookDescription() {
     return description;
   }
 
-//    // to clear the saved shopping 
-// window.addEventListener('beforeunload',()=>{
-//     localStorage.clear();
-// })
+   // to clear the saved shopping 
+window.addEventListener('beforeunload',()=>{
+    localStorage.clear();
+})

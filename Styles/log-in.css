@@ -153,7 +153,7 @@ body {
     background-color:hsl(18, 49%, 61%);
     height: 350px;
     width: 300px;
-    margin-right: 29em;
+    margin-right: 29.5em;
 }
 
 /* login form */
@@ -175,63 +175,27 @@ body {
     background-color: beige;
 }
 .login-text p{
-    color: #7E4B3C;
+    color: #861f00;
     padding: 5px;
-}
-/* FOoooter*/
-
-.footer {
-    /* display: grid; */
-    background-color: #064b8f;
-    color: white;
-    padding: 5px 20px;
-    text-align: center;
-    margin-top:250px;
-}
-.footer-section {
-    width: 100%;
-}
-.footer-section h4 {
     font-size: 20px;
-    color: #df9100;
-    text-transform: uppercase;
 }
 
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin: 8px 0;
-}
-
-.footer-section ul li a {
+.login-text p a {
     text-decoration: none;
-    color: #F5F5DC;
-    transition: color 0.3s ease;
+    color:blue;
 }
-
-.footer-section ul li a:hover {
-    color: #f39c12;
-}
-
-.social-links {
-    display: flex;
-    gap: 10px;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #FFF5E1;
+.login-text input{
     font-size: 18px;
+    outline: none;
 }
-
-.social-links a:hover {
-    color: #e8a12e;
+.login-btn{
+    font-size: 20px;
+    border: solid;
+    border-width: 1px;
+    background-color:#51291d ;
+    color: #f6b132;
+    margin-left: 95px;
 }
-
-.footer-bottom {
-    font-size: 14px;
-    color: #ccc;
+.login-btn:hover{
+    cursor: pointer;
 }
