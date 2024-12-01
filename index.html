@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Styles/index.css">
     <link rel="shortcut icon" href="Images/Web_Icon.png" type="image/x-icon">
 </head>
-<body class="index-page">
+<body>
     <nav class="navbar">
 
         <!-- sidebar -->
@@ -15,16 +15,16 @@
     <div class="sidebar" id="sidebar">
         <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
         <a href="index.html">Home</a>
-        <a href="science.html">Science</a>
-        <a href="history.html">History</a>
-        <a href="tech.html">Technology</a>
-        <a href="fiction.html">Fiction</a>
+        <a href="#">Science</a>
+        <a href="#">History</a>
+        <a href="#">Technology</a>
+        <a href="#">Fiction</a>
         <a href="#">Contact Us</a>
     </div>
     <!-- end of the sidebar -->
 
         <div class="navbar-brand">
-            <a class="header-title" href="index.html">Bookstore</a>
+            <a href="index.html">Bookstore</a>
         </div>
         <ul class="navbar-links">
             <li><a href="index.html">Home</a></li>
@@ -33,32 +33,32 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle"onclick="Dropdown(event)" >Categories    ▾</a>
                 <ul class="dropdown-menu">
-                    <li><a href="science.html">Science</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="tech.html">Technology</a></li>
-                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Fiction</a></li>
                 </ul>
             </li>
             <li><a href="#">Contact Us</a></li>
         </ul>
         
         <div class="navbar-icons">
-                <a href="#" class="login">Login</a>
-            <a href="cart.html" class="cart-icon">🛒</a>
+                <a href="F:\log in.html" class="login">Login</a>
+            <a href="#" class="cart-icon">🛒</a>
+            <a href="F:\sign up.html" class="Signup">Sign Up</a>
         </div>
     </nav>
 
-    <!-- The main photo for the site && search  -->
+    <!-- The main photo for the site -->
 
     <section class="first-seciton">
         <div class="main-photo">
             <img src="Images/main_photo.jpg" alt="Library Photo">
         </div>
         <div class="search">
-            <input type="text" placeholder="Search for Book..." id="searchInput" class="search-bar">
+            <input type="text" placeholder="Search for Book....." class="search-bar">
             <button class="search-button">Search</button>
         </div>
-        <ul id="searchResults"></ul>
     </section>
     
     <!--the start of categories section -->
@@ -69,75 +69,72 @@
                 <img src="Images/history.jpg" alt="History" class="img-card">
             <div class="card-info">
                 <h3 class="Card-title">History</h3>
-                <button class="Card-button"><a href="history.html" class="discover-btn">Discover</a></button>
+                <button class="Card-button"><a href="" class="discover-btn">Discover</a></button>
             </div>
         </div>
         <div class="card">
             <img src="Images/science.jpg" alt="Science" class="img-card">
         <div class="card-info">
             <h3 class="Card-title">Science</h3>
-            <button class="Card-button"><a href="science.html" class="discover-btn">Discover</a></button>
+            <button class="Card-button"><a href="" class="discover-btn">Discover</a></button>
         </div>
     </div>
     <div class="card">
-                <img src="Images/programming.jpg" alt="tech" class="img-card">
+                <img src="Images/programming.jpg" alt="Children" class="img-card">
             <div class="card-info">
                 <h3 class="Card-title">Technology</h3>
-                <button class="Card-button"><a href="tech.html" class="discover-btn">Discover</a></button>
+                <button class="Card-button"><a href="" class="discover-btn">Discover</a></button>
             </div>
         </div>
     </section>
 
 
     <!--the section of books -->
-
     <h2 class="title-section">Popular Books</h2>
     <section class="books-examples">
-        <div class="card book">
+        <div class="card">
             <img src="Images/b-h1.jpg" alt="Ghosts of Crook County" class=" book-img">
-        <div class="card-info" data-image="Images/b-h1.jpg" data-title="Ghosts of Crook County" data-price="28" >
+        <div class="card-info">
             <h3 class="Card-title">Ghosts of Crook County</h3>
-            <button class="cart-button" onclick="addToCart(this)">Quick add</button>
+            <button class="cart-button">Quick add</button>
         </div>
     </div>
-    <div class="card book" >
+    <div class="card">
         <img src="Images/b-s1.avif" alt="Criminal Identification" class=" book-img">
-    <div class="card-info" data-image="Images/b-s1.avif" data-title="A History of Fingerprinting " data-price="23">
+    <div class="card-info">
         <h3 class="Card-title">A History of Fingerprinting </h3>
-        <button class="cart-button"onclick="addToCart(this)" >Quick add</button>
+        <button class="cart-button">Quick add</button>
     </div>
 </div>
 <div class="card">
             <img src="Images/techno1.webp" alt="Techno Resiliency" class=" book-img">
-        <div class="card-info" data-image="Images/techno1.webp" data-title="Techno" data-price="25" >
-            <h3 class="Card-title">Techno</h3>
-            <button class="cart-button"onclick="addToCart(this)">Quick add</button>
+        <div class="card-info">
+            <h3 class="Card-title">Techno Resiliency</h3>
+            <button class="cart-button">Quick add</button>
         </div>
     </div>
-    <div class="card  book">
+    <div class="card">
             <img src="Images/b-t2.avif" alt="The Sounds of Life" class=" book-img">
-        <div class="card-info" data-image="Images/b-t2.avif" data-title="The Sounds of Life" data-price="55">
+        <div class="card-info">
             <h3 class="Card-title">The Sounds of Life</h3>
-            <button class="cart-button"onclick="addToCart(this)">Quick add</button>
+            <button class="cart-button">Quick add</button>
         </div>
     </div>
-    <div class="card book">
+    <div class="card">
             <img src="Images/b-s2.avif" alt="The Earth After Us" class=" book-img">
-        <div class="card-info" data-image="Images/b-s2.avif" data-title="The Earth After Us" data-price="80">
+        <div class="card-info">
             <h3 class="Card-title">The Earth After Us</h3>
-            <button class="cart-button"onclick="addToCart(this)">Quick add</button>
+            <button class="cart-button">Quick add</button>
         </div>
     </div>
-    <div class="card book">
+    <div class="card">
             <img src="Images/red-parts.avif" alt="Red-Parts" class=" book-img">
-        <div class="card-info" data-image="Images/red-parts.avif" data-title="Red Parts" data-price="30">
+        <div class="card-info">
             <h3 class="Card-title">Red Parts</h3>
-            <button class="cart-button"onclick="addToCart(this)" >Quick add</button>
+            <button class="cart-button" >Quick add</button>
         </div>
     </div>
     </section>
-
-
     <!--Footer -->
 
     <footer class="footer">
@@ -155,7 +152,5 @@
     </footer>
     
     <script src="Scripts/index.js"></script>
-    <script src="Scripts/addToCart.js"></script>   
-    <script src="Scripts/Search.js"></script>   
 </body>
 </html>
