@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Bookstore</title>
+<link rel="stylesheet" href="Styles/log-in.css">
+</head>
+<body><nav class="navbar">
+
+    <!-- sidebar -->
+    <button class="open-btn" onclick="openSidebar()">☰</button>
+<div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
+    <a href="index.html">Home</a>
+    <a href="science.html">Science</a>
+    <a href="history.html">History</a>
+    <a href="tech.html">Technology</a>
+    <a href="fiction.html">Fiction</a>
+    <a href="#">Contact Us</a>
+</div>
+<!-- end of the sidebar -->
+
+    <div class="navbar-brand">
+        <a class="header-title" href="index.html">Bookstore</a>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        
+        <!-- Categories Dropdown -->
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle"onclick="Dropdown(event)" >Categories    ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="science.html">Science</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="tech.html">Technology</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    
+        <div class="navbar-icons">
+            <a href="cart.html" class="cart-icon">🛒</a>
+        </div>
+    </nav>
+    <div class="login-form">
+        <div class="login-text">
+        <p>Enter  Name </p>
+        <input class="input" type="text" placeholder="User Name"  required name="first">
+        <p>Enter  Password</p>
+        <input class="input" type="password" placeholder="Password" required name="Password">
+        <p class="Paragraph">You Don't Have An Account?<a href="sign up.html" class="Link">Create Your Account Now</a></p>
+        <button class="login">Login</button>
+        </div>
+        <img src="Images/deliver.svg" class="img">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Bookstore</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bookstore. All rights reserved.</p>
+    </div>
+</footer>
+<script src="Scripts/index.js"></script>
+</body>
+</html>

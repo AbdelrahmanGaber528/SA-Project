@@ -176,31 +176,23 @@ top:50px;
     height:700px;
     width:400px;
 }
-.Login:hover{
-animation:translate;
-animation-duration:3s;
-animation-iteration-count: infinite;
+.signup{
+    position: relative;
+    right:20px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #fff;
+    border:2px;
 }
+
 @keyframes  translate{
     to{
         transform: translatey(-10px);
     }
 }
-.Login input,p{
-position: relative;
-bottom:700px;
-left:200px;
-border:none;
-}
 
-.Login p{
-    font-size: 25px;
-    color:white;
-}
-.login input{
-    width:400px;
-    background-color:coral;
-}
+
 .Create{
 width:400px;
 font-size:25px;
@@ -221,7 +213,7 @@ transform:translatey(100px);
     bottom:630px;
     left:20px;
 }
-.Link{
+.link{
     color:green;
 }
 
