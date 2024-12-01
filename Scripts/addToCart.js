@@ -18,8 +18,11 @@ function addToCart(button) {
     localStorage.setItem("cart", JSON.stringify(cart));
 
     alert(`${title} has been added to your cart!`);
+    
 }
 
+// payment button :
+const btn_pay = document.querySelector('.make-payment');
 
 // Load cart data from localStorage
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -39,7 +42,7 @@ if (cart.length === 0) {
                 <h3>${item.title}</h3>
                 <p class="price">Price: $${item.price}</p>
                 <p>${generateRandomBookDescription()}</p>
-                <button class="delete-btn">Delete</button>
+                <button class="delete-btn" onclick="delBook();">Delete</button>
                 <span class="amount">${1}</span>
                 <button class="decrease-btn"onclick="" >-</button>
                 <button class="increase-btn" onclick="">+</button>
@@ -47,8 +50,26 @@ if (cart.length === 0) {
         `;
         cartContainer.appendChild(cartItem);
     });
+    btn_pay.style.display = 'block';
 }
 
+// delete books 
+const cartItems = document.querySelectorAll('.cart-item');
+function delBook(){
+        cartItems.forEach(item => {
+            const deleteButton = item.querySelector('.delete-btn');
+            deleteButton.addEventListener('click', () => {
+                item.remove();
+                
+            });
+    });
+}
+
+function isEmpty(){
+    if(cartItems.length === 0)
+        btn_pay.style.display = 'none';
+}
+isEmpty();
 // Make Payment Function
 function makePayment() {
 
@@ -62,19 +83,6 @@ function makePayment() {
         window.location.href = "payment.html";
     }}
 
-function delBook(){
-
-        const cartItems = document.querySelectorAll('.cart-item');
-
-        cartItems.forEach(item => {
-            const deleteButton = item.querySelector('.delete-btn');
-        
-            deleteButton.addEventListener('click', () => {
-                item.remove();
-            });
-        });
-}
-delBook();
 
 const amount = document.querySelectorAll('.amount');
 const increase = document.querySelectorAll('.increase-btn');
@@ -178,7 +186,7 @@ function generateRandomBookDescription() {
     return description;
   }
 
-   // to clear the saved shopping 
-window.addEventListener('beforeunload',()=>{
-    localStorage.clear();
-})
+//    // to clear the saved shopping 
+// window.addEventListener('beforeunload',()=>{
+//     localStorage.clear();
+// })

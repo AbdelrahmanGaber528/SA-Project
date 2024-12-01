@@ -44,6 +44,7 @@
     background-color: #007BFF;
     color: white;
     border: none;
+    display: none;
     cursor: pointer;
 }
 .make-payment:hover {
