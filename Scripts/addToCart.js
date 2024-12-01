@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 function addToCart(button) {
     // Get the parent `.book` element
