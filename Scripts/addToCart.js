@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 function addToCart(button) {
     // Get the parent `.book` element
     const bookElement = button.parentElement;
