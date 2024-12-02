@@ -151,9 +151,9 @@ body {
 /*form photo*/
 .img{
     background-color:hsl(18, 49%, 61%);
-    height: 350px;
-    width: 300px;
-    margin-right: 29.5em;
+    height: 430px;
+    width: 380px;
+    margin-right:22.6em;
 }
 
 /* login form */
@@ -167,28 +167,39 @@ body {
     border: solid;
     border-width: 1px;
     border-color: #e8a12e;
-    height: 318px;
-    width: 300px;
+    height: 398px;
+    width: 330px;
     margin-left: 28.3em;
     padding-left: 10px;
     padding-top: 30px;
     background-color: beige;
 }
-.login-text p{
+.login-text p , .sign-text p{
     color: #861f00;
     padding: 5px;
     font-size: 20px;
 }
-
-.login-text p a {
+.login-text p{
+    margin-top: 50px;
+}
+.login-text p a , .sign-text p a {
     text-decoration: none;
     color:blue;
 }
-.login-text input{
+.login-text input , .sign-text input{
     font-size: 18px;
     outline: none;
 }
-.login-btn{
+.login-btn {
+    font-size: 20px;
+    border: solid;
+    border-width: 1px;
+    background-color:#51291d ;
+    color: #f6b132;
+    margin-left: 108px;
+    margin-top: 5px;
+}
+.sign-btn{
     font-size: 20px;
     border: solid;
     border-width: 1px;
@@ -196,6 +207,25 @@ body {
     color: #f6b132;
     margin-left: 95px;
 }
-.login-btn:hover{
+.login-btn:hover , .sign-btn:hover{
     cursor: pointer;
+}
+
+/* the signup form*/
+.sign-text{
+    border: solid;
+    border-width: 1px;
+    border-color: #e8a12e;
+    height: 398px;
+    width: 330px;
+    margin-left: 28.3em;
+    padding-left: 10px;
+    padding-top: 30px;
+    background-color: beige;
+}
+.img-sign{
+    background-color:hsl(18, 49%, 61%);
+    height: 430px;
+    width: 380px;
+    margin-right:22.6em;
 }
