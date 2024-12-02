@@ -194,16 +194,21 @@ body {
     font-size: 20px;
     border: solid;
     border-width: 1px;
-    background-color:#51291d ;
-    color: #f6b132;
-    margin-left: 108px;
-    margin-top: 5px;
+    /* background-color:#51291d ; */
+    margin-left: 100px;
+    margin-top: 10px;
+    border-color: #e8a12e;
+    width: 80px;
+}
+.login-btn a {
+    text-decoration: none;
+    color: #f6b132; 
 }
 .sign-btn{
     font-size: 20px;
     border: solid;
     border-width: 1px;
-    background-color:#51291d ;
+    /* background-color:#51291d ; */
     color: #f6b132;
     margin-left: 95px;
 }

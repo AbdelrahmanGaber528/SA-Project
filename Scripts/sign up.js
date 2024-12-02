@@ -31,11 +31,52 @@ function closeSidebar() {
     const side = document.getElementById("sidebar");
     side.classList.remove("open");  // Remove the 'open' class to hide the sidebar
 }
-function gotoHome(){
-    window.location.href = 'log-in.html';
-}
-document.querySelector('.login-btn').addEventListener('click',()=>{
-        window.location.href = 'index.html';
-})
 
-const 
+
+
+
+/** login funcitons  */
+
+const userNameInput = document.querySelector('.userName-sign');
+const pass = document.querySelector('.pass-sign');
+const signUpButton = document.querySelector('.sign-btn');
+
+signUpButton.addEventListener('click', function () {
+    const userName = userNameInput.value.trim();
+    const password = pass.value;
+
+    if (userName && password) {
+        // Save username and password to localStorage
+        localStorage.setItem('userName', userName);
+        localStorage.setItem('password', password);
+
+        // Redirect to login page
+        window.location.href = 'log-in.html';
+    } else {
+        alert('Please fill in both username and password!');
+    }
+});
+
+// Log-In Logic
+const logInButton = document.querySelector('.login-btn');
+const userLoginInput = document.querySelector('.name-login');
+const passLoginInput = document.querySelector('.pass-login');
+const storageName = localStorage.setItem('storage',userLoginInput.value);
+const storedUserName = localStorage.getItem('storage');
+logInButton.addEventListener('click', function () {
+    const storedPassword = localStorage.getItem('password');
+    if (userLoginInput.value.trim() && passLoginInput.value) {
+        if (
+            userLoginInput.value === storedUserName &&
+            passLoginInput.value === storedPassword
+        ) {
+            document.querySelector('.login-text').innerHTML = storedUserName;
+            window.location.href = 'index.html';
+        } else {
+            alert('Invalid username or password!');
+        }
+    } else {
+        alert('Please fill in both username and password!');
+    }
+});
+
