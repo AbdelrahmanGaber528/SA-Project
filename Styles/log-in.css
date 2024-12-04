@@ -161,7 +161,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 .login-text{
     border: solid;
@@ -171,7 +171,7 @@ body {
     width: 330px;
     margin-left: 28.3em;
     padding-left: 10px;
-    padding-top: 30px;
+    padding-top: 20px;
     background-color: beige;
 }
 .login-text p , .sign-text p{

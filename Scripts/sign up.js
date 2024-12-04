@@ -40,43 +40,20 @@ function closeSidebar() {
 const userNameInput = document.querySelector('.userName-sign');
 const pass = document.querySelector('.pass-sign');
 const signUpButton = document.querySelector('.sign-btn');
+const passConfirm = document.querySelector('.pass-again');
 
 signUpButton.addEventListener('click', function () {
+
     const userName = userNameInput.value.trim();
     const password = pass.value;
+    const confirmPass = passConfirm.value;
 
     if (userName && password) {
-        // Save username and password to localStorage
-        localStorage.setItem('userName', userName);
-        localStorage.setItem('password', password);
-
-        // Redirect to login page
-        window.location.href = 'log-in.html';
+            if(password === confirmPass)
+                window.location.href = 'log-in.html';
+            else
+                alert("Please fill the password correct.");
     } else {
         alert('Please fill in both username and password!');
     }
 });
-
-// Log-In Logic
-const logInButton = document.querySelector('.login-btn');
-const userLoginInput = document.querySelector('.name-login');
-const passLoginInput = document.querySelector('.pass-login');
-const storageName = localStorage.setItem('storage',userLoginInput.value);
-const storedUserName = localStorage.getItem('storage');
-logInButton.addEventListener('click', function () {
-    const storedPassword = localStorage.getItem('password');
-    if (userLoginInput.value.trim() && passLoginInput.value) {
-        if (
-            userLoginInput.value === storedUserName &&
-            passLoginInput.value === storedPassword
-        ) {
-            document.querySelector('.login-text').innerHTML = storedUserName;
-            window.location.href = 'index.html';
-        } else {
-            alert('Invalid username or password!');
-        }
-    } else {
-        alert('Please fill in both username and password!');
-    }
-});
-
