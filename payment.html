@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="Styles/payment.css">
+    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">
+</head>
+<body>
+    <header>
+    </header>
+    <section class="content">
+        <div class="container" style="margin-bottom: 30px;">
+            <div class="left">
+                <h3>BILLING ADDRESS</h3>
+                <form style="color: #ba7900;" id="paymentForm" onsubmit="return validateForm()">
+                    Full name
+                    <input type="text" name="full_name" placeholder="Enter name">
+                    Email
+                    <input type="text" name="email" placeholder="Enter email">
+                    Address
+                    <input type="text" name="address" placeholder="Enter address">
+                    City
+                    <input type="text" name="city" placeholder="Enter city">
+                    <div id="zip">
+                                                <label style="color: #ba7900;">
+
+                            State
+                            <select name="state">
+                                <option>Choose State..</option>
+                                <option>Egypt</option>
+                                <option>Morocco</option>
+                                <option>Tunisia</option>
+                                <option>Algeria</option>
+                                <option>Palestine</option>
+                            </select>
+                        </label>
+                                                <label style="color: #ba7900;">
+
+                            Zip code
+                            <input type="number" name="zip_code" placeholder="Zip code">
+                        </label>
+                    </div>
+             </form>
+            </div>
+            <div class="right">
+                <h3>PAYMENT</h3>
+                <form style="color:#ba7900;">
+                    Accepted Cards<br>
+                    <img src="Images/104.jpg" width="80">
+                    <img src="Images/105.jpg" width="80">
+                    <br><br>
+                    Credit card number
+                    <input type="text" name="card_number" placeholder="Enter card number">
+                    Exp month
+                    <input type="text" name="exp_month" placeholder="Enter month">
+                    <div id="zip">
+                                                <label style="color: #ba7900;">
+
+                            Exp year
+                            <select name="exp_year">
+                                <option>Choose Year..</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                                <option>2028</option>
+                                <option>2029</option>
+                            </select>
+                        </label>
+                        <label style="color: #ba7900;">
+                            CVV
+                            <input type="number" name="cvv" placeholder="CVV">
+                        </label>
+                    </div>
+                    <button class="btn" onclick="validateBothForms()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
