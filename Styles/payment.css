@@ -19,7 +19,7 @@ body {
     min-height: 100vh;
     /* background: #34495e; */
     font-size: 1.2rem;
-    background: url(images/106.jpg) no-repeat;
+    background-image: url(../Images/106.jpg);
 }
 .container{
     background: rgb(164, 197, 220, 0.8);
