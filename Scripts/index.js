@@ -57,3 +57,15 @@ document.querySelectorAll(".cart-button").forEach(button => {
     });
 });
 
+
+
+function filterBooks() {
+    const minPrice = parseFloat(document.getElementById('min-price').value) || 0;
+    const maxPrice = parseFloat(document.getElementById('max-price').value) || Infinity;
+    const books = document.querySelectorAll('.card-info');
+
+    books.forEach(book => {
+      const price = parseFloat(book.getAttribute('data-price'));
+      book.parentElement.style.display = price >= minPrice && price <= maxPrice ? '' : 'none';
+    });
+  }
