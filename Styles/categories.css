@@ -164,6 +164,41 @@ body{
     background-color: #258989;
 }
 
+/* Container for Filter */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .filter-container input {
+    width: 120px;
+    padding: 10px;
+    margin: 0 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .filter-container input:focus {
+    border-color: #007BFF;
+  }
+  .filter-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .filter-container button:hover {
+    background-color: #0056b3;
+  }
+
 
 /*
     <!----some colors----!>
