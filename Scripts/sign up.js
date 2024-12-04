@@ -47,7 +47,7 @@ signUpButton.addEventListener('click', function () {
     const userName = userNameInput.value.trim();
     const password = pass.value;
     const confirmPass = passConfirm.value;
-
+    
     if (userName && password) {
             if(password === confirmPass)
                 window.location.href = 'log-in.html';
