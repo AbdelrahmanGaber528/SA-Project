@@ -167,17 +167,22 @@ body {
     border: solid;
     border-width: 1px;
     border-color: #e8a12e;
-    height: 398px;
+    height: 408px;
     width: 330px;
     margin-left: 28.3em;
     padding-left: 10px;
     padding-top: 20px;
     background-color: beige;
 }
-.login-text p , .sign-text p{
+.login-text p  {
     color: #861f00;
     padding: 5px;
-    font-size: 20px;
+    font-size: 18px;
+}
+.sign-text p{
+    color: #861f00;
+    padding: 3px;
+    font-size: 14px;
 }
 .login-text p{
     margin-top: 50px;
@@ -186,10 +191,11 @@ body {
     text-decoration: none;
     color:blue;
 }
-.login-text input , .sign-text input{
+.login-text input,.sign-text input {
     font-size: 18px;
     outline: none;
 }
+
 .login-btn {
     font-size: 20px;
     border: solid;

@@ -4,7 +4,7 @@ function validateBothForms() {
 
     if (isPaymentFormValid && isCheckoutFormValid) {
         alert("All fields are valid. Submitting...");
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
     } else {
         alert("Please fill out all fields in both forms");
     }
